@@ -1,0 +1,358 @@
+@charset "UTF-8";
+:root {
+  --black: #000000;
+  --html: #E93E30;
+  --javascript: #F7E018;
+  --css: #299ED5;
+  --react: #292C33;
+  --vue: #67C770;
+  --bootstrap: #563D7C;
+  --fregular: 400;
+  --fmedium: 500;
+  --fbold: 700;
+}
+
+@media (max-width: 768px) {
+  .novedades__main {
+    flex-direction: column;
+  }
+  .populares__container {
+    flex-direction: column;
+  }
+  .categorias__container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0; /* Centrar en pantallas pequeñas */
+  }
+  .categorias__shape {
+    width: 100%; /* Ampliar en móviles */
+  }
+}
+@media (max-width: 576px) {
+  /* Ajustes para dispositivos móviles */
+  .categorias__title {
+    text-align: center;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: var(--black);
+  max-width: 80vw;
+  margin: 30px auto;
+  padding: 0 1rem;
+}
+
+body,
+* {
+  box-sizing: border-box;
+}
+
+.header__container {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: var(--fbold);
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 10px;
+}
+
+.footer__container {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.footer__logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: var(--fbold);
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 10px;
+}
+
+.novedades {
+  padding-bottom: 2rem;
+  border: 3px solid #CCCCCC;
+  border-left: 0;
+  border-right: 0;
+}
+
+.novedades__card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.novedades .card__img--large {
+  width: 100%;
+  height: auto;
+}
+
+.novedades .card__body--large {
+  padding: 1rem;
+  text-align: left;
+}
+
+.novedades .card__text--large {
+  font-weight: var(--fmedium);
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--black);
+}
+
+.novedades .novedades__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0rem 0.5rem;
+}
+
+.novedades .card__date {
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  line-height: 24px;
+  font-weight: var(--fregular);
+}
+
+.novedades .card__title {
+  font-size: 20px;
+  font-weight: var(--fbold);
+  line-height: 30px;
+}
+
+.novedades .card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.novedades .card__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.novedades .card__text {
+  font-size: 16px;
+  color: var(--black);
+  line-height: 24px;
+  font-weight: var(--fmedium);
+}
+
+.novedades .card__img {
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.novedades .card__body {
+  padding: 1rem;
+  text-align: left;
+}
+
+.populares__card {
+  flex: 0 1 45%; /* Cambio aquí para ajustar el ancho */
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 45vh;
+  margin-bottom: 1rem;
+}
+
+.populares .card__img {
+  width: 100%;
+  height: 60%; /* Ajuste para una mejor visualización */
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0; /* Redondear solo la parte superior */
+}
+
+.populares .card__body {
+  padding: 1rem;
+  text-align: left;
+}
+
+.populares .card__date,
+.populares .card__title,
+.populares .card__text {
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.populares .card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.populares .card__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.populares .card__text {
+  font-size: 16px;
+  color: var(--black);
+  line-height: 24px;
+  font-weight: var(--fmedium);
+}
+
+.populares .card__title {
+  font-size: 20px;
+  font-weight: var(--fbold);
+}
+
+.populares .card__text {
+  font-size: 16px;
+  font-weight: var(--fmedium);
+}
+
+.categorias {
+  display: flex;
+  flex-direction: row; /* Mantiene la dirección de filas */
+  align-items: flex-start; /* Alinea elementos en la parte superior */
+}
+
+.categorias__main {
+  flex: 1; /* Permite que esta sección ocupe el espacio disponible */
+  display: flex;
+  gap: 0.5rem; /* Espaciado entre elementos */
+  flex-direction: column; /* Cambia la dirección a columna */
+  align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+.categorias__title {
+  font-weight: var(--fbold);
+  font-size: 2rem;
+  margin: 1rem 0;
+  margin-left: 3rem; /* Margin para el título */
+}
+
+.categorias__img {
+  width: 85px; /* Ajuste del tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  padding: 0.5rem; /* Espaciado interno */
+}
+
+.categorias__shape {
+  padding: 1rem; /* Padding dentro de las formas */
+  width: 297px; /* Ancho de las tarjetas */
+  height: 90px; /* Altura de las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  display: flex;
+  flex-direction: row; /* Mantiene la dirección en fila */
+  align-items: center; /* Alinea verticalmente al centro */
+  justify-content: space-between; /* Espacio entre los elementos */
+  margin-bottom: 2rem; /* Espaciado inferior */
+  margin-left: 3rem; /* Espaciado a la izquierda */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+.categorias--bg-html {
+  background-color: var(--html);
+}
+
+.categorias--bg-js {
+  background-color: var(--javascript);
+}
+
+.categorias--bg-css {
+  background-color: var(--css);
+}
+
+.categorias--bg-react {
+  background-color: var(--react);
+}
+
+.categorias--bg-vue {
+  background-color: var(--vue);
+}
+
+.categorias--bg-bootstrap {
+  background-color: var(--bootstrap);
+}
+
+.categorias__name {
+  color: white; /* Color del texto */
+  font-weight: var(--fbold);
+  font-size: 32px; /* Tamaño de fuente */
+}
+
+.categorias__link {
+  color: var(--black); /* Color del texto del enlace */
+  font-weight: var(--fregular);
+  font-size: 20px;
+  line-height: 30px; /* Altura de línea */
+  text-decoration: none; /* Sin subrayado */
+  margin-left: 3rem; /* Espaciado a la izquierda */
+}
+
+.categorias__link:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.novedades__title {
+  font-weight: var(--fbold);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.novedades__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.novedades__side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.populares__title {
+  font-weight: var(--fbold);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.populares {
+  padding: 2rem 0;
+  border-bottom: 3px solid #CCCCCC;
+}
+
+.populares__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

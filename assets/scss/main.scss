@@ -1,0 +1,21 @@
+// 1. Variables
+@import 'utils/variables';
+@import 'utils/mediaqueries';
+
+// 2. Base
+@import 'base/base';
+
+// 3. Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// 4. Components
+@import 'components/cards';
+@import 'components/categorias';
+@import 'components/novedades';
+@import 'components/populares';
+
+// 5. Pages
+@import 'pages/home';
+// 6. Themes (si es necesario)
+// @import 'themes/theme';

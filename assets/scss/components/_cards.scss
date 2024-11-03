@@ -1,0 +1,139 @@
+.novedades {
+    padding-bottom: 2rem;
+    border: 3px solid #CCCCCC;
+    border-left: 0;
+    border-right: 0;
+}
+
+.novedades__card {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.novedades .card__img--large {
+    width: 100%;
+    height: auto;
+}
+
+.novedades .card__body--large {
+    padding: 1rem;
+    text-align: left;
+}
+
+.novedades .card__text--large {
+    font-weight: var(--fmedium);
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--black);
+}
+
+.novedades .novedades__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 0.5rem;
+}
+
+.novedades .card__date {
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    line-height: 24px;
+    font-weight: var(--fregular);
+}
+
+.novedades .card__title {
+    font-size: 20px;
+    font-weight: var(--fbold);
+    line-height: 30px;
+}
+
+.novedades .card__footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.novedades .card__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.novedades .card__text {
+    font-size: 16px;
+    color: var(--black);
+    line-height: 24px;
+    font-weight: var(--fmedium);
+}
+
+.novedades .card__img {
+    width: 40%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.novedades .card__body {
+    padding: 1rem;
+    text-align: left;
+}
+
+.populares__card {
+    flex: 0 1 45%; /* Cambio aquí para ajustar el ancho */
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 45vh;
+    margin-bottom: 1rem;
+}
+
+.populares .card__img {
+    width: 100%;
+    height: 60%; /* Ajuste para una mejor visualización */
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0; /* Redondear solo la parte superior */
+}
+
+.populares .card__body {
+    padding: 1rem;
+    text-align: left;
+}
+
+.populares .card__date,
+.populares .card__title,
+.populares .card__text {
+    color: var(--black);
+    line-height: 1.5;
+}
+
+.populares .card__footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.populares .card__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.populares .card__text {
+    font-size: 16px;
+    color: var(--black);
+    line-height: 24px;
+    font-weight: var(--fmedium);
+}
+
+.populares .card__title {
+    font-size: 20px;
+    font-weight: var(--fbold);
+}
+
+.populares .card__text {
+    font-size: 16px;
+    font-weight: var(--fmedium);
+}

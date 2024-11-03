@@ -1,0 +1,83 @@
+.categorias {
+    display: flex;
+    flex-direction: row; /* Mantiene la dirección de filas */
+    align-items: flex-start; /* Alinea elementos en la parte superior */
+}
+
+.categorias__main {
+    flex: 1; /* Permite que esta sección ocupe el espacio disponible */
+    display: flex;
+    gap: 0.5rem; /* Espaciado entre elementos */
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+.categorias__title {
+    font-weight: var(--fbold);
+    font-size: 2rem;
+    margin: 1rem 0;
+    margin-left: 3rem; /* Margin para el título */
+}
+
+.categorias__img {
+    width: 85px; /* Ajuste del tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    padding: 0.5rem; /* Espaciado interno */
+}
+
+.categorias__shape {
+    padding: 1rem; /* Padding dentro de las formas */
+    width: 297px; /* Ancho de las tarjetas */
+    height: 90px; /* Altura de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: row; /* Mantiene la dirección en fila */
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    margin-left: 3rem; /* Espaciado a la izquierda */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+.categorias--bg-html {
+    background-color: var(--html);
+}
+
+.categorias--bg-js {
+    background-color: var(--javascript);
+}
+
+.categorias--bg-css {
+    background-color: var(--css);
+}
+
+.categorias--bg-react {
+    background-color: var(--react);
+}
+
+.categorias--bg-vue {
+    background-color: var(--vue);
+}
+
+.categorias--bg-bootstrap {
+    background-color: var(--bootstrap);
+}
+
+.categorias__name {
+    color: white; /* Color del texto */
+    font-weight: var(--fbold);
+    font-size: 32px; /* Tamaño de fuente */
+}
+
+.categorias__link {
+    color: var(--black); /* Color del texto del enlace */
+    font-weight: var(--fregular);
+    font-size: 20px;
+    line-height: 30px; /* Altura de línea */
+    text-decoration: none; /* Sin subrayado */
+    margin-left: 3rem; /* Espaciado a la izquierda */
+}
+
+.categorias__link:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
